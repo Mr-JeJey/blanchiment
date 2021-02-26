@@ -31,7 +31,7 @@ function KeyboardInput(TextEntry, ExampleText, MaxStringLenght)
 end
 
 local function openBlanchiement()
-	RMenu.Add("zj_blanchi", "zj_blanchi_main", RageUI.CreateMenu("~y~Blanchiement","Pourcentage : ~r~35%"))
+	RMenu.Add("zj_blanchi", "zj_blanchi_main", RageUI.CreateMenu("~y~Blanchiment","Pourcentage : ~r~35%"))
 	RMenu:Get('zj_blanchi', 'zj_blanchi_main'):SetRectangleBanner(0, 0, 0, 255)
 	RMenu:Get('zj_blanchi', 'zj_blanchi_main').Closed = function()
 		MenuBalchie = false

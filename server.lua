@@ -7,7 +7,7 @@ RegisterServerEvent('jejey:blanchiement')
 AddEventHandler('jejey:blanchiement', function(argent)
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(source)
-	local taxe = 0.4    -- Somme multipliée par ce nombre
+	local taxe = 0.65    -- Le blanchisseur prend 35% (1-0.65 = 0.35)
 
 	argent = ESX.Math.Round(tonumber(argent))
 	pourcentage = argent * taxe

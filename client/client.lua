@@ -13,7 +13,7 @@ local MenuBalchie = false
 function KeyboardInput(TextEntry, ExampleText, MaxStringLenght)
     AddTextEntry('FMMC_KEY_TIP1', TextEntry)
     blockinput = true
-    DisplayOnscreenKeyboard(1, "FMMC_KEY_TIP1", "", ExampleText, "", "", "", MaxStringLenght)
+    DisplayOnscreenKeyboard(1, "FMMC_KEY_TIP1", "", ExampleText, "", "", "", 10)
     while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do 
         Wait(0)
     end 
